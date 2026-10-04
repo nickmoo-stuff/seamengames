@@ -1,2 +1,2 @@
 # seamengames
-The home of Seamen Games, including the nonfamous Seamen Pool
+Seamen Games - independent games from the high seas.
