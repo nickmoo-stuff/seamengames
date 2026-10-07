@@ -3,100 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Seamen Games - independent games from the high seas.">
-  <title>Seamen Games</title>
-
+  <meta name="description" content="Seamen Games — independent games from the high seas. Play Seamen English Rules Pool in your browser and find gameplay tips, FAQs and Android release news.">
+  <title>Seamen Games | Seamen English Rules Pool</title>
   <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #101010;
-      color: #f5f0df;
-      font-family: Georgia, "Times New Roman", serif;
-      text-align: center;
-    }
-
-    main {
-      width: min(90%, 700px);
-      padding: 40px 20px;
-    }
-
-    h1 {
-      margin-bottom: 8px;
-      font-size: clamp(2.5rem, 8vw, 4.5rem);
-      letter-spacing: 0.08em;
-      color: #d8ad55;
-    }
-
-    .tagline {
-      margin-top: 0;
-      font-size: 1.2rem;
-      font-style: italic;
-      color: #cfc7b2;
-    }
-
-    hr {
-      width: 80px;
-      margin: 32px auto;
-      border: 0;
-      border-top: 2px solid #d8ad55;
-    }
-
-    h2 {
-      color: #d8ad55;
-    }
-
-    p {
-      line-height: 1.6;
-    }
-
-    .coming-soon {
-      margin-top: 28px;
-      font-weight: bold;
-    }
-
-    footer {
-      margin-top: 55px;
-      font-size: 0.85rem;
-      color: #999;
-    }
-
-    a {
-      color: #d8ad55;
-    }
+    :root{--bg:#0b0d0d;--panel:#151816;--panel2:#1d211d;--gold:#d8ad55;--gold2:#f0cf83;--cream:#f5f0df;--muted:#cfc7b2;--line:#3c3424;--green:#173b2b;--green2:#21563c}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 50% 0,#202016 0,#0b0d0d 42rem);color:var(--cream);font-family:Georgia,"Times New Roman",serif;line-height:1.65}
+    a{color:var(--gold2)} .wrap{width:min(1120px,92%);margin:auto}.site-head{padding:26px 0 18px;text-align:center}.brand{margin:0;color:var(--gold);font-size:clamp(2rem,5vw,3.4rem);letter-spacing:.1em;text-transform:uppercase}.tagline{margin:.15rem 0 0;color:var(--muted);font-style:italic}
+    .hero{overflow:hidden;border:1px solid #5c4926;border-radius:18px;background:#111;box-shadow:0 20px 70px #000}.hero img{display:block;width:100%;height:auto}.intro{text-align:center;padding:34px clamp(18px,5vw,56px) 40px}.eyebrow{color:var(--gold2);font-weight:bold;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem}.intro h2,.section-title{color:var(--gold);line-height:1.15}.intro h2{font-size:clamp(1.8rem,4vw,2.8rem);margin:.35rem 0 .8rem}.intro p{max-width:780px;margin:.6rem auto;color:#e7dfca}
+    .actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:13px 21px;border-radius:9px;text-decoration:none;font-weight:bold;border:1px solid #8b6a2e;background:linear-gradient(#e3ba65,#b17c2f);color:#17120a;box-shadow:0 4px 16px #0008}.btn:hover{filter:brightness(1.08)}.btn.secondary{background:#20241f;color:var(--cream);border-color:#555}.btn-note{display:block;font-size:.78rem;font-weight:normal;margin-top:2px;color:#3c2d17}
+    section{padding:54px 0}.section-title{text-align:center;font-size:clamp(1.7rem,3vw,2.35rem);margin:0 0 8px}.section-lead{text-align:center;max-width:720px;margin:0 auto 28px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:14px;padding:24px;box-shadow:0 12px 30px #0005}.card h3{margin:.1rem 0 .45rem;color:var(--gold2);font-size:1.2rem}.card p{margin:0;color:#ded6c1}.icon{font-size:1.7rem;display:block;margin-bottom:8px}
+    .tips .card{border-top:3px solid var(--gold)}.tips strong{color:#fff}.faq{max-width:900px;margin:auto}.faq details{background:#141714;border:1px solid #393526;border-radius:10px;margin:10px 0;overflow:hidden}.faq summary{cursor:pointer;padding:16px 19px;color:var(--gold2);font-weight:bold;list-style:none}.faq summary::-webkit-details-marker{display:none}.faq summary::after{content:"+";float:right;font-size:1.3rem}.faq details[open] summary::after{content:"−"}.faq .answer{padding:0 19px 17px;color:#e4dcc8}.faq .answer p{margin:.35rem 0}
+    .android{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:center;background:linear-gradient(135deg,#15291f,#111813);border:1px solid #365c45;border-radius:16px;padding:30px}.status{display:inline-block;background:#203e2d;border:1px solid #4f8061;border-radius:999px;padding:5px 11px;color:#d8f2df;font-size:.82rem;font-weight:bold}.android h3{color:var(--gold);font-size:1.7rem;margin:.65rem 0}.android p{color:#ded6c1}.android-side{text-align:center;font-size:4rem}.small{font-size:.9rem;color:var(--muted)}.apple{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:center;background:linear-gradient(135deg,#202225,#141516);border:1px solid #4d5055;border-radius:16px;padding:30px}.apple h3{color:var(--gold);font-size:1.7rem;margin:.65rem 0}.apple p{color:#ded6c1}.apple-side{text-align:center;font-size:4rem}
+    footer{border-top:1px solid #2d2d27;padding:30px 0 45px;text-align:center;color:#999}.footer-links{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-bottom:10px}.footer-links a{color:#cdb777}
+    @media(max-width:780px){.grid{grid-template-columns:1fr}.android,.apple{grid-template-columns:1fr}.android-side,.apple-side{display:none}section{padding:42px 0}.site-head{padding-top:20px}.hero{border-radius:12px}.intro{padding-top:26px}.brand{letter-spacing:.06em}}
   </style>
 </head>
-
 <body>
-  <main>
-    <h1>Seamen Games</h1>
+  <header class="site-head wrap">
+    <h1 class="brand">Seamen Games</h1>
     <p class="tagline">Independent games from the high seas.</p>
+  </header>
 
-    <hr>
+  <main class="wrap">
+    <article class="hero">
+      <img src="seamen-pool-feature.png" width="1024" height="500" alt="Seamen English Rules Pool — pirate playing English pool in a seaside tavern">
+      <div class="intro">
+        <div class="eyebrow">Current feature</div>
+        <h2>Seamen English Rules Pool</h2>
+        <p>Genuine English pool wrapped up in a ridiculous pirate adventure. Head to the tavern and beyond, challenge a cast of interesting and questionable characters, unlock shiny rewards, and prove what you can do at the table.</p>
+        <div class="actions">
+          <!-- Replace PLAY_GAME_URL below with the live GitHub Pages game URL. -->
+          <a class="btn" id="play-game" href="#play-link-needed" target="_blank" rel="noopener">🎱 Play in browser ↗<span class="btn-note">Opens in a new tab</span></a>
+          <a class="btn secondary" href="#tips">Read the top tips</a>
+        </div>
+      </div>
+    </article>
 
-    <h2>Seamen English Rules Pool</h2>
+    <section aria-labelledby="features-title">
+      <h2 class="section-title" id="features-title">Pool with a bit more personality</h2>
+      <p class="section-lead">A proper game of English rules pool, surrounded by pirates, progression, and just enough nonsense.</p>
+      <div class="grid">
+        <div class="card"><span class="icon">🎱</span><h3>English rules pool</h3><p>Play a full game with fouls, visits, legal breaks, group selection and the tactical decisions that make English pool what it is.</p></div>
+        <div class="card"><span class="icon">🏴‍☠️</span><h3>Pirates o' the tavern</h3><p>Take on a growing roster of opponents with their own personalities and playing styles as you make your way through the adventure.</p></div>
+        <div class="card"><span class="icon">🏆</span><h3>Progress and unlock</h3><p>Earn trophies, track your statistics and unlock new cosmetics and rewards as your pirate-themed pool career becomes increasingly questionable.</p></div>
+      </div>
+    </section>
 
-    <p>
-      Classic English rules pool with pirates, progression
-      and absolutely no nonsense.
-    </p>
+    <section class="tips" id="tips" aria-labelledby="tips-title">
+      <h2 class="section-title" id="tips-title">Top tips before you rack 'em up</h2>
+      <p class="section-lead">New to English pool? These three things will save you a surprising amount of swearing.</p>
+      <div class="grid">
+        <div class="card"><span class="icon">💥</span><h3>Learn the break</h3><p>A legal break needs <strong>three points</strong>. A potted ball counts as one point and each object ball that crosses an imaginary centre line counts as one. Smashing them hard isn't enough on its own.</p></div>
+        <div class="card"><span class="icon">🎯</span><h3>Use the aiming help</h3><p>If you're learning, use the game's aiming assistance by clicking Game Menu during a match to understand where your shot is heading. It's there to help — and you can reduce or disable assistance as you improve.</p></div>
+        <div class="card"><span class="icon">🤏</span><h3>Don't just use 100% power</h3><p>Maximum power is rarely the best choice. Softer, controlled shots make pots easier to manage and leave the cue ball somewhere useful for your next shot. Save the big hits for when you actually need them.</p></div>
+      </div>
+    </section>
 
-    <p>
-      Genuine English pool wrapped up in a ridiculous pirate adventure.
-      Head to the tavern and beyond to hit the tables with a wild cast
-      of interesting and... questionable characters.
-    </p>
+    <section aria-labelledby="faq-title">
+      <h2 class="section-title" id="faq-title">Gameplay FAQs</h2>
+      <p class="section-lead">The questions most likely to occur immediately after accusing the game of cheating.</p>
+      <div class="faq">
+        <details><summary>How do I make a legal break?</summary><div class="answer"><p>You need to score at least three break points. Each object ball potted scores one point, and each object ball that crosses the imaginary centre line of the table scores one point. If the total is fewer than three, the break is illegal and the game will explain what happens next.</p></div></details>
+        <details><summary>What sort of power should I use?</summary><div class="answer"><p>Think control first. Most ordinary pots don't need anything close to maximum power. Use enough to make the shot comfortably while thinking about where the cue ball will finish. The break is an obvious time for a stronger shot, but even then power isn't a substitute for a legal break. Find your sweet spots - 70% to 90% is typical for a nice break, and shots after that work well at 30% to 50% depending on the situation. Even a 15% shot helps in tight situations if you want to cuddle the ball against or into the pocket instead of ricochet it off into the unknown.</p></div></details>
+        <details><summary>How can I get help aiming?</summary><div class="answer"><p>Use the game's aiming assistance and angle guide whilst you're learning. They help show the direction of the shot and make it easier to understand contact angles. The assistance can be changed or switched off when you want more of a challenge - or if you're playing local head to head with a friend and REALLY want to show off.</p></div></details>
+        <details><summary>Why didn't I get two shots after a foul?</summary><div class="answer"><p>Not every turn-ending event is treated as the same kind of foul, so an opponent losing their turn does not automatically mean you receive two visits. Check the on-screen foul/message text and game log: when a foul awards two visits, the game will show that extra visit as part of the turn.</p></div></details>
+        <details><summary>What's a 'visit'?</summary><div class="answer"><p>A visit is your turn at the table. During a visit, you keep playing shots for as long as you legally pot your balls. Your visit ends when you fail to pot, commit a foul, or finish the game.</p></div></details>
+		<details><summary>Why didn't I get that colour?</summary><div class="answer"><p>After the break the table can remain open. Simply potting a red or yellow doesn't always immediately assign that group. The game will tell you when groups have been decided, so until then, you're still choosing from an open table.</p></div></details>
+        <details><summary>What happens after a foul?</summary><div class="answer"><p>The game handles the appropriate foul consequence automatically and tells you what has been awarded. Depending on the situation this can include an additional visit and, where the rules allow it, cue-ball placement. Watch the status message before taking the next shot.</p></div></details>
+        <details><summary>Can I turn the aiming guide off?</summary><div class="answer"><p>Yes. The aiming help is there for players who want it, not as a requirement. You can change the aim-guide setting as you become more confident. Captain Blackball doesn't care if you have it on or off, and it doesn't affect progression or trophies if you have it on.</p></div></details>
+        <details><summary>Does my progress save?</summary><div class="answer"><p>Yes. Progress is stored locally on your device. The game also supports save export and import, so it's worth keeping an exported backup before uninstalling the game or making major changes to your device.</p></div></details>
+        <details><summary>Can I play offline?</summary><div class="answer"><p>Normal gameplay is designed not to need a continuous internet connection once the game is installed. External web links and services naturally still need internet access.</p></div></details>
+        <details><summary>What's different about English rules pool?</summary><div class="answer"><p>If you're used to American-style 8-ball, some familiar situations work differently — particularly the break, fouls, and visits. Seamen Pool handles the rules for you, so the status messages are a useful guide while you're learning. For bedtime reading, we've included a link to the full official English Pool Association rules in the game's main menu. They're only actually around two pages long at the moment.</p></div></details>
+		<details><summary>How can I get in touch about a bug, suggestion, compliment, or any other feedback?</summary><div class="answer"><p><a href="mailto:seamenpool@gmail.com">Email me!</a> If reporting a bug, it would be helpful please if you could include what phone, operating system version (if you can find it in your phone settings) and which browser app you're using if it's not the app from the store. I'll try to respond super quickly but can't promise anything instant all the time as I might be out of the house talking to neighbourhood cats.</p></div></details>
+      </div>
+    </section>
 
-    <p class="coming-soon">
-      Coming soon to Android.
-    </p>
-
-    <footer>
-      &copy; 2026 Seamen Games
-    </footer>
+    <section aria-labelledby="android-title">
+      <div class="android">
+        <div><span class="status">Currently in testing</span><h3 id="android-title">Coming to Google Play</h3><p>The Android edition of Seamen English Rules Pool is on its voyage towards Google Play. It's currently going through closed testing before its full release.</p><p class="small">For now, you can play the browser edition above.</p></div>
+        <div class="android-side" aria-hidden="true">📱🏴‍☠️</div>
+      </div>
+    </section>
+    <section aria-labelledby="apple-title">
+      <div class="apple">
+        <div><span class="status">Not currently planned</span><h3 id="apple-title">What about iPhone and Apple devices?</h3><p>I'd love to bring Seamen English Rules Pool to the Apple App Store as soon as possible. At the moment, though, the cost of getting and keeping it there is unrealistic compared with Google's developer licence.</p><p>Realistically, I could only introduce an Apple version once I'm satisfied it isn't going to become an enormous repeated bill coming out of my own pocket — until, of course, the Google Play version makes me a millionaire.</p><p class="small">In the meantime, Apple users can still play the browser edition above.</p></div>
+        <div class="apple-side" aria-hidden="true">🍎🎱</div>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-links"><a href="support/">Support</a><a href="privacy/">Privacy policy</a><a href="mailto:seamenpool@gmail.com">Contact</a></div>
+      <div>&copy; 2026 Seamen Games</div>
+    </div>
+  </footer>
 </body>
 </html>
