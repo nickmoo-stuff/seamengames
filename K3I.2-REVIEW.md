@@ -5,7 +5,7 @@ Baseline `e75f805`, review branch `stage3i-k3i2-homepage`. No main merge or webs
 ## Changes
 
 - Android section now says **Seamen Pool — Android Alpha testing**, describes the approved three chapters, Pool School, aiming/spin and landscape controls, and states that the latest Alpha was submitted for processing. Tester availability is explicitly **not yet confirmed**; public release is later. No unverified Play Store link was added.
-- **Coming Soon from Seamen Games** contains two text-only cards with the exact requested provisional Seamen Bank / Seamen Voyager descriptions. Existing dark colours, type, card borders/spacing and responsive grid are reused; no artwork, mechanics, dates, platforms or monetisation are invented.
+- **Coming Soon from Seamen Games** contains two text-only cards with the exact requested provisional Seamen Banker / Seamen Voyager descriptions. Existing dark colours, type, card borders/spacing and responsive grid are reused; no artwork, mechanics, dates, platforms or monetisation are invented.
 - Apple section is retained, and explicitly says iPhone/iPad users can play directly in Safari without an App Store download, with Share → Add to Home Screen guidance.
 - Added visible keyboard focus outlines. Existing feature image, browser-play URL, all links, complete FAQ, support/privacy pages and CNAME are preserved.
 

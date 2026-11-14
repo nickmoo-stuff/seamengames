@@ -8,7 +8,7 @@ const {chromium,devices}=require('playwright');
  for(const [width,height] of [[1440,1000],[390,844],[855,384],[320,568]]){
   const p=await browser.newPage({...width<900?devices['Pixel 7']:{},viewport:{width,height},deviceScaleFactor:1}),errors=[],failed=[];
   p.on('pageerror',e=>errors.push(e.message));p.on('response',r=>{if(r.status()>=400)failed.push(r.url());});await p.goto('http://127.0.0.1:8021/',{waitUntil:'networkidle'});
-  assert(await p.locator('#coming-soon-title').isVisible());assert.equal(await p.locator('.upcoming-card').count(),2);assert.equal(await p.locator('#bank-title').textContent(),'Seamen Bank');assert.equal(await p.locator('#voyager-title').textContent(),'Seamen Voyager');
+  assert(await p.locator('#coming-soon-title').isVisible());assert.equal(await p.locator('.upcoming-card').count(),2);assert.equal(await p.locator('#bank-title').textContent(),'Seamen Banker');assert.equal(await p.locator('#voyager-title').textContent(),'Seamen Voyager');
   assert((await p.locator('.upcoming-card').nth(0).textContent()).includes('Another project on the horizon from Seamen Games. More details to be revealed.'));
   assert((await p.locator('.upcoming-card').nth(1).textContent()).includes('A new Seamen Games adventure is on the horizon. More details coming soon.'));
   const android=await p.locator('.android').innerText();assert(android.includes('Seamen Pool — Android Alpha testing')&&android.includes('Availability to testers is not yet confirmed.')&&android.includes('Public Android release is coming later.'));
