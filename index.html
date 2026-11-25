@@ -17,16 +17,18 @@
     .upcoming-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.upcoming-card{border-top:3px solid var(--gold);padding:28px}.upcoming-card .eyebrow{display:block;margin-bottom:12px}.upcoming-card h3{font-size:1.55rem}.upcoming-card p{max-width:38ch}.btn:focus-visible,.faq summary:focus-visible,a:focus-visible{outline:3px solid var(--gold2);outline-offset:4px}
     footer{border-top:1px solid #2d2d27;padding:30px 0 45px;text-align:center;color:#999}.footer-links{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-bottom:10px}.footer-links a{color:#cdb777}
     @media(max-width:780px){.grid{grid-template-columns:1fr}.android,.apple{grid-template-columns:1fr}.android-side,.apple-side{display:none}section{padding:42px 0}.site-head{padding-top:20px}.hero{border-radius:12px}.intro{padding-top:26px}.brand{letter-spacing:.06em}}
+    .site-nav{display:flex;justify-content:center;flex-wrap:wrap;gap:10px 24px;margin-top:16px}.site-nav a{color:var(--gold2);text-decoration:none;font-weight:bold}.site-nav a:hover{text-decoration:underline}.status.development{background:#30291b;border-color:#806637;color:var(--gold2)}.upcoming-card h3{margin-top:12px}
   </style>
 </head>
 <body>
   <header class="site-head wrap">
     <h1 class="brand">Seamen Games</h1>
     <p class="tagline">Independent games from the high seas.</p>
+      <nav class="site-nav" aria-label="Main navigation"><a href="#pool">Seamen Pool</a><a href="#coming-soon">Other &amp; Upcoming Games</a></nav>
   </header>
 
   <main class="wrap">
-    <article class="hero">
+    <article class="hero" id="pool">
       <img src="seamen-pool-feature.png" width="1024" height="500" alt="Seamen English Rules Pool — pirate playing English pool in a seaside tavern">
       <div class="intro">
         <div class="eyebrow">Current feature</div>
@@ -93,11 +95,11 @@
       </div>
     </section>
     <section id="coming-soon" aria-labelledby="coming-soon-title">
-      <h2 class="section-title" id="coming-soon-title">Coming Soon from Seamen Games</h2>
-      <p class="section-lead">More on the horizon. Watch this space.</p>
+      <h2 class="section-title" id="coming-soon-title">Other &amp; Upcoming Games</h2>
+      <p class="section-lead">More adventures from Seamen Games. Watch this space.</p>
       <div class="grid upcoming-grid">
-        <article class="card upcoming-card" aria-labelledby="bank-title"><span class="eyebrow">On the horizon</span><h3 id="bank-title">Seamen Banker</h3><p>Another project on the horizon from Seamen Games. More details to be revealed.</p></article>
-        <article class="card upcoming-card" aria-labelledby="voyager-title"><span class="eyebrow">Coming soon</span><h3 id="voyager-title">Seamen Voyager</h3><p>A new Seamen Games adventure is on the horizon. More details coming soon.</p></article>
+        <article class="card upcoming-card" aria-labelledby="bank-title"><span class="status">In closed testing</span><h3 id="bank-title">Seamen Banker</h3><p>Take charge of a bank, balance competing demands and see how long your career survives. Every decision counts.</p></article>
+        <article class="card upcoming-card" aria-labelledby="explorer-title"><span class="status development">In development</span><h3 id="explorer-title">Seamen Explorer</h3><p>A new adventure from Seamen Games. More details coming soon.</p></article>
       </div>
     </section>
   </main>
